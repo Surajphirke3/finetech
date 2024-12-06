@@ -15,6 +15,9 @@ Scale effortlessly: Google Cloud’s infrastructure grows with your user base.
 Let’s dive into the implementation process.
 
 Design
+![image](https://github.com/user-attachments/assets/97fd4b3b-974f-4a9b-9897-fa4fe9decf54)
+
+![Artboard 1](https://github.com/user-attachments/assets/f6853399-6de9-4012-a819-a809cf78e826)
 
 
 
