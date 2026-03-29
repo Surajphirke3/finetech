@@ -1,104 +1,267 @@
-<h1>Smart Finance Academy: Building an AI-Powered FinTech Platform Powered by Gemini AI</h1>
+# 💰 FinTech Edu — AI-Powered Financial Education Platform
 
+<div align="center">
 
-Introduction: Transforming FinTech Education with AI
-FinTech education is evolving rapidly, driven by the need for personalized, accessible, and cutting-edge learning experiences. With AI and Google Cloud’s, you can build a scalable, intelligent education platform tailored to the unique needs of learners and professionals in the FinTech space.
+![FinTech Edu Banner](https://img.shields.io/badge/FinTech-Edu-blue?style=for-the-badge&logo=googlechrome&logoColor=white)
 
-Here’s how you can implement an AI-powered FinTech education platform using Gemini AI, step by step.
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Gemini AI](https://img.shields.io/badge/Google_Gemini_AI-0.1.3-4285F4?style=flat-square&logo=google&logoColor=white)](https://ai.google.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](./LICENSE)
 
-Why Google Cloud for AI-Powered FinTech Education?
-Google Cloud offers a powerful suite of tools that make it ideal for building advanced educational platforms. From AI/ML capabilities to seamless scalability, its services enable you to:
+**Personalized FinTech education powered by Google Gemini AI — tailored for students, employees, and retirees.**
 
-Personalize learning: Create tailored learning pathways using Google Gemini AI.
-Streamline backend operations: Use tools like Compute Engine and Firebase for efficient hosting and management.
-Scale effortlessly: Google Cloud’s infrastructure grows with your user base.
-Let’s dive into the implementation process.
+[Live Demo](#) · [Report a Bug](https://github.com/Surajphirke3/finetech/issues) · [Request a Feature](https://github.com/Surajphirke3/finetech/issues)
 
-Design
-![image](https://github.com/user-attachments/assets/97fd4b3b-974f-4a9b-9897-fa4fe9decf54)
+</div>
 
-![Artboard 1](https://github.com/user-attachments/assets/f6853399-6de9-4012-a819-a809cf78e826)
+---
 
+## 📑 Table of Contents
 
+- [About the Project](#-about-the-project)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Prerequisites](#-prerequisites)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Screenshots](#-screenshots)
+- [Configuration / Environment Variables](#-configuration--environment-variables)
+- [Folder Structure](#-folder-structure)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgements](#-acknowledgements)
 
-High-Level Architecture
-The platform comprises three key layers :
+---
 
-Frontend (Next.js): User-friendly interface deployed Google Run.
-Backend : API layer deployed on Google Cloud Compute Engine, interacting with Next.js.
-AI Integration (Google Gemini): Powers personalized learning paths using Google Cloud Vertex AI.
-This modular design ensures scalability, maintainability, and seamless integration of advanced AI functionalities
+## 🎯 About the Project
 
-Step-by-Step Instructions
-Step 1: Set Up Your Google Cloud Account
-Create an Account: Visit the Google Cloud Console and sign up.
-Enable Billing: Go to Billing in the console to activate services.
-Step 2: Create a Google Cloud Project
-Create a Project: In the Console, select New Project, name it (e.g., “FinTech-Education-Platform”), and assign a billing account.
-Enable APIs: Under APIs & Services > Library, enable:
-Vertex AI
-Firebase
-Google Compute Engine
-Step 3: Integrate Vertex AI and Google Gemini
-Enable Vertex AI API: Go to APIs & Services > Library and enable Vertex AI.
-Set Up Gemini AI:
-Access Vertex AI and configure a pretrained or custom Gemini model.
-Integrate the API into your backend using Python.
-Step 4: Deploy Backend with Next.js on Google Cloud
-Set Up Firebase Hosting: Initialize Firebase Hosting in your Next.js project and link it to your Google Cloud project.
-Build and Deploy: Build your Next.js app and deploy it to Firebase Hosting.
-Enable SSR or APIs (if needed): Use Google Cloud Run for server-side rendering or API routes.
-Test Deployment: Ensure both backend and frontend work seamlessly after deployment.
-Step 5: Deploy Frontend with Next.js
-Build the Next.js App:
-Build your Next.js app for production:
+FinTech Edu is an AI-powered educational web platform that delivers **personalized financial literacy content** to three distinct user groups — students, working employees, and retirees. The platform uses Google's Gemini AI to provide real-time, context-aware answers to financial questions through an interactive chat interface.
+
+### The Problem It Solves
+
+Financial education is rarely one-size-fits-all. A college student learning about budgeting has very different needs from a mid-career professional planning for retirement or a retiree managing their savings. FinTech Edu solves this by tailoring learning paths and AI-powered conversations to each demographic.
+
+---
+
+## ✨ Features
+
+- 🤖 **AI-Powered Chat** — Real-time financial Q&A powered by Google Gemini Pro, customized per user type
+- 🎓 **Personalized Learning Paths** — Distinct content tracks for students, employees, and retirees
+- 📱 **Responsive Design** — Fully mobile-friendly interface built with Tailwind CSS
+- ⚡ **Fast & Modern** — Built on Next.js 14 with server-side rendering for optimal performance
+- 🧩 **Modular Architecture** — Reusable React components for consistent UX across all content pages
+- 🔒 **Type-Safe Codebase** — End-to-end TypeScript with strict mode enabled
+
+---
+
+## 🛠 Tech Stack
+
+| Layer | Technology | Version |
+|-------|-----------|---------|
+| **Framework** | [Next.js](https://nextjs.org/) | 14.0.4 |
+| **UI Library** | [React](https://react.dev/) | 18 |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) | 5 |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) | 3.4.16 |
+| **CSS Processing** | [PostCSS](https://postcss.org/) + [Autoprefixer](https://github.com/postcss/autoprefixer) | 8.4.49 / 10.4.20 |
+| **AI Integration** | [Google Generative AI (Gemini)](https://ai.google.dev/) | 0.1.3 |
+| **Linting** | [ESLint](https://eslint.org/) (Next.js config) | 8 |
+
+---
+
+## ✅ Prerequisites
+
+Make sure you have the following installed before setting up the project:
+
+- **Node.js** ≥ 18.x ([Download](https://nodejs.org/))
+- **npm** ≥ 9.x (comes with Node.js) or **yarn** / **pnpm**
+- A **Google Generative AI API key** ([Get one here](https://aistudio.google.com/app/apikey))
+
+---
+
+## 🚀 Installation & Setup
+
+Follow these steps to run FinTech Edu locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Surajphirke3/finetech.git
+cd finetech
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file in the project root and add your Google Generative AI API key:
+
+```bash
+cp .env.example .env.local   # if .env.example exists, otherwise create manually
+```
+
+```env
+# .env.local
+NEXT_PUBLIC_GEMINI_API_KEY=your_google_generative_ai_api_key_here
+```
+
+> ⚠️ **Security Note:** Never commit your `.env.local` file or expose API keys in source code.  
+> The key must be set as an environment variable and referenced via `process.env.NEXT_PUBLIC_GEMINI_API_KEY`.
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app running.
+
+### 5. Build for production
+
+```bash
 npm run build
-Install FastAPI:
-Deploy FastAPI: Start the server and expose it to the internet.
-2. Deploy the App:Deploy your Next.js app to your chosen hosting service (e.g., Vercel, Google Cloud, or any other platform that supports Next.js).
+npm run start
+```
 
-Step 6: Integrate Frontend and Backend
-Create API Routes: Set up API routes in the pages/api directory of your Next.js project to handle backend logic.
-Implement Secure Endpoints: Add secure endpoints in API routes for data fetching or user input handling.
-Use Axios/Fetch: Use Axios or Fetch API in your Next.js frontend to communicate with the backend API routes.
-Handle Responses: Process and display the response data from the backend in your frontend.
-Result / Demo: FinTech Education with AI
+---
 
+## 📖 Usage Guide
 
+### Navigating the Platform
 
-Format
+1. **Home Page (`/`)** — Select your user type: *Student*, *Employee*, or *Retiree*
+2. **Content Pages** (`/content/student`, `/content/employee`, `/content/retired`) — Browse curated financial lessons for your category
+3. **AI Chat** — Use the integrated chat widget on any content page to ask personalized financial questions
+4. **About Page (`/about`)** — Learn about the platform's mission
+5. **Contact Page (`/contact`)** — Get in touch with the team
 
-Allows user authentication and profile management.
-Provides personalized AI-driven learning pathways.
-Delivers a seamless user experience across devices.
-Visualize your results with Google Cloud Monitoring to track user engagement and performance metrics.
+### Using the AI Chat
 
-What’s Next?
-Ready to take your platform further?
+Each content page includes an AI-powered chat interface. Simply type a financial question in the chat box and receive a personalized response from Google Gemini:
 
-Explore deploying microservices with Google Kubernetes Engine (GKE).
-Integrate payment gateways for premium learning modules.
-Add analytics dashboards using Google Data Studio.
-Call to Action
-To learn more about Google Cloud services and to create impact for the work you do, get around to these steps right away:
+```
+Student Chat Example:
+  You: "How should I start investing as a college student?"
+  AI:  "As a student, starting small is key. Consider opening a high-yield
+        savings account, explore index funds with low minimums like Fidelity
+        ZERO funds, and take advantage of your employer's 401(k) match once
+        you start working..."
+```
 
-Register for Code Vipassana sessions
-Join the meetup group Datapreneur Social
-Sign up to become a Google Cloud Innovator
-A Vision for FinTech Education
-By leveraging Google Cloud’s AI and infrastructure, you’re not just creating a platform — you’re redefining how learners’ approach FinTech education. Whether it’s personalized content, real-time analytics, or seamless user experiences, your platform can be the catalyst for the next generation of FinTech professionals.
+### Available npm Scripts
 
-Ready to Get Started?
+| Script | Command | Description |
+|--------|---------|-------------|
+| Development | `npm run dev` | Start development server at `localhost:3000` |
+| Build | `npm run build` | Create optimized production build |
+| Start | `npm run start` | Start production server |
+| Lint | `npm run lint` | Run ESLint code quality checks |
 
-Sign up for Google Cloud today and begin building your AI-powered FinTech education platform!
+---
 
-Additional Resources
-Google Cloud Vertex AI Documentation
-Firebase Getting Started Guide
-Next.js Guide
-With Google Cloud, innovation in FinTech education is just a few steps away. Let’s build the future together!
+## 📸 Screenshots
 
-GitHub Link: https://github.com/Surajphirke3/finetech
+> _Screenshots will be added here once the UI is finalized._
 
-written by Shristi Singhal
-Suraj Phirke
+| Home Page | Student Content | AI Chat |
+|-----------|----------------|---------|
+| _(coming soon)_ | _(coming soon)_ | _(coming soon)_ |
+
+---
+
+## ⚙️ Configuration / Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `NEXT_PUBLIC_GEMINI_API_KEY` | ✅ Yes | Google Generative AI (Gemini) API key for the chat feature |
+
+Create a `.env.local` file at the project root and populate it with the variables above. This file is included in `.gitignore` and will **not** be committed to version control.
+
+---
+
+## 📁 Folder Structure
+
+```
+finetech/
+├── app/                        # Next.js App Router (main source)
+│   ├── about/
+│   │   └── page.tsx            # About the platform
+│   ├── components/
+│   │   ├── Chat.tsx            # AI chat widget (Gemini integration)
+│   │   ├── ContentPage.tsx     # Reusable lesson display component
+│   │   ├── Footer.tsx          # Site footer
+│   │   └── Header.tsx          # Navigation header
+│   ├── contact/
+│   │   └── page.tsx            # Contact information page
+│   ├── content/
+│   │   ├── employee/
+│   │   │   └── page.tsx        # Employee-focused content
+│   │   ├── retired/
+│   │   │   └── page.tsx        # Retiree-focused content
+│   │   └── student/
+│   │       └── page.tsx        # Student-focused content
+│   ├── globals.css             # Global Tailwind CSS styles
+│   ├── layout.tsx              # Root layout (Header + Footer wrapper)
+│   └── page.tsx                # Home / landing page
+├── .eslintrc.json              # ESLint configuration
+├── .gitignore                  # Git ignore rules
+├── next.config.mjs             # Next.js configuration
+├── package.json                # Project metadata and dependencies
+├── postcss.config.js           # PostCSS configuration
+├── tailwind.config.js          # Tailwind CSS configuration
+├── tsconfig.json               # TypeScript configuration
+├── CONTRIBUTING.md             # Contributor guide
+├── LICENSE                     # MIT License
+└── README.md                   # This file
+```
+
+---
+
+## 🗺 Roadmap
+
+- [x] AI-powered chat with Google Gemini
+- [x] Personalized content for students, employees, and retirees
+- [x] Responsive Tailwind CSS design
+- [ ] Move API key to environment variables
+- [ ] Add user authentication (NextAuth.js or Clerk)
+- [ ] Persist chat history (local storage or database)
+- [ ] Add progress tracking for each learning module
+- [ ] Dark mode support
+- [ ] Multilingual support (i18n)
+- [ ] Unit and integration tests (Jest + React Testing Library)
+- [ ] CI/CD pipeline via GitHub Actions
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome and greatly appreciated! Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to get started, branch naming conventions, commit message standards, and how to open a pull request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feat/amazing-feature`)
+3. Commit your changes (`git commit -m "feat: add amazing feature"`)
+4. Push to the branch (`git push origin feat/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgements
+
+- [**Shristi Singhal**](https://github.com/shristisinghal) — Co-author and contributor
+- [**Suraj Phirke**](https://github.com/Surajphirke3) — Project creator and maintainer
+- [Google Gemini AI](https://ai.google.dev/) — Generative AI powering the chat feature
+- [Next.js](https://nextjs.org/) — React framework used for the platform
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS framework
+- [Vercel](https://vercel.com/) — Recommended deployment platform for Next.js apps
